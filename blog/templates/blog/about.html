@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}" />
+    <script type="text/javascript" src="{% static 'blog/jquery-3.1.1.js' %}"></script>
+    <!--<script type="text/javascript" src="{{STATIC_URL}} blog/jquery-3.1.1.js"></script>-->
+
+    <body>
+        {% include "blog/panels/SideNav.html" %}
+
+        I'm the fucking boss.
+
+
+    </body>
+</html>
