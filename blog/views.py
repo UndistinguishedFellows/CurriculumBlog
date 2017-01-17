@@ -16,9 +16,8 @@ def index(request):
     return render(request, 'blog/index.html', context)
 
 
-def post_page(request, post_id):
-    post = get_object_or_404(Post, pk=post_id)
-    return render(request, 'blog/post.html', {'post': post})
+def post_page(request):
+    return render(request, 'blog/blog.html')
 
 def author(request):
     return render(request, 'blog/about.html')
